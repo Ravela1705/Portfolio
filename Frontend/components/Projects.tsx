@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Blockchain Voting Application",
     description: "A secure, decentralized student election portal built with a full-stack Next.js and Node.js pipeline, leveraging Supabase and cryptographic verification.",
-    liveLink: "https://github.com/Ravela1705/portfolio",
+    liveLink: "https://github.com/Ravela1705/blockvote-frontend",
     tags: ["Next.js", "Node.js", "Supabase", "Blockchain Architecture", "PostgreSQL"]
   },
   {
