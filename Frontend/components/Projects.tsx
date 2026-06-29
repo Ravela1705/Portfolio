@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Heart Attack Risk Prediction",
     description: "A machine learning and predictive analytics web application designed to analyze clinical cardiovascular risk factors and deliver early diagnostic health insights.",
-    liveLink: "https://github.com/Ravela1705/Heart-Attack-Risk-Prediction",
+    liveLink: "https://github.com/Ravela1705/Heart_Attack_Risk_Prediction",
     tags: ["Python", "Machine Learning", "Streamlit", "Data Analytics", "Predictive Modeling"]
   }
 ];
