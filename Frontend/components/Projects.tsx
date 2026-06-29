@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Lost and Found Mobile App",
     description: "A community-focused mobile application designed for university students to post, track, and locate missing items across campus with real-time updates and status tracking.",
-    liveLink: "https://github.com/Ravela1705/Lost-and-Found", // Replace with your exact repository link if different
+    liveLink: "https://github.com/Ravela1705/Online-Lost-and-Found-System", // Replace with your exact repository link if different
     tags: ["React Native", "Mobile Development", "Node.js", "Database Management"]
   },
   {
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Heart Attack Risk Prediction",
     description: "A machine learning and predictive analytics web application designed to analyze clinical cardiovascular risk factors and deliver early diagnostic health insights.",
-    liveLink: "https://github.com/Ravela1705/Heart-Attack-Prediction",
+    liveLink: "https://github.com/Ravela1705/Heart-Attack-Risk-Prediction",
     tags: ["Python", "Machine Learning", "Streamlit", "Data Analytics", "Predictive Modeling"]
   }
 ];

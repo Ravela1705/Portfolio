@@ -32,7 +32,7 @@ export default function Experience() {
                 <div className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-blue-400 ring-4 ring-black"></div>
                 <h4 className="text-lg font-medium text-white">SRM University AP</h4>
                 <p className="text-emerald-400 text-xs font-mono uppercase tracking-wider">Class of 2026</p>
-                <p className="text-gray-400 text-sm mt-1">B.Tech Computer Science • CGPA: 7.6/10</p>
+                <p className="text-gray-400 text-sm mt-1">B.Tech Computer Science • CGPA: 7.84/10</p>
               </div>
 
               {/* 12th */}
