@@ -16,45 +16,42 @@ export default function Experience() {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-emerald-400 rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="space-y-8">
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} whileHover={{ y: -10 }}
-              className="bg-white/5 border border-white/10 rounded-2xl p-6 transition-all hover:border-emerald-400/30 hover:bg-white/10 backdrop-blur-sm"
-            >
-              <div className="flex items-center gap-4 mb-4"><EduIcon /><h3 className="text-2xl font-semibold">Education</h3></div>
-              <div className="pl-10 border-l border-white/20 ml-3">
-                <h4 className="text-lg font-medium text-white">SRM University AP</h4>
-                <p className="text-emerald-400 text-sm mb-2">Class of 2026</p>
-                <p className="text-gray-400">Computer Science Student • CGPA: 7.6/10</p>
-              </div>
-            </motion.div>
-          </div>
+        {/* Changed grid layout to 3 columns on large screens to spread them evenly and eliminate the gap */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} whileHover={{ y: -8 }}
+            className="bg-white/5 border border-white/10 rounded-2xl p-6 transition-all hover:border-emerald-400/30 hover:bg-white/10 backdrop-blur-sm flex flex-col"
+          >
+            <div className="flex items-center gap-4 mb-4"><EduIcon /><h3 className="text-2xl font-semibold">Education</h3></div>
+            <div className="pl-10 border-l border-white/20 ml-3 flex-1">
+              <h4 className="text-lg font-medium text-white">SRM University AP</h4>
+              <p className="text-emerald-400 text-sm mb-2">Class of 2026</p>
+              <p className="text-gray-400">Computer Science Student • CGPA: 7.6/10</p>
+            </div>
+          </motion.div>
 
-          <div className="space-y-8">
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} whileHover={{ y: -10 }}
-              className="bg-white/5 border border-white/10 rounded-2xl p-6 transition-all hover:border-emerald-400/30 hover:bg-white/10 backdrop-blur-sm"
-            >
-              <div className="flex items-center gap-4 mb-4"><BookIcon /><h3 className="text-2xl font-semibold">Publications</h3></div>
-              <div className="pl-10 border-l border-white/20 ml-3">
-                <h4 className="text-lg font-medium text-white leading-snug">An Enhanced CNN BILSTM Autoencoder for Robust Anomaly Detection in PowerGrid's</h4>
-                <p className="text-emerald-400 text-sm mb-2 mt-1">MAI-2025 Conference • Dec 2025</p>
-                <p className="text-gray-400 text-sm leading-relaxed">Introduced a hybrid deep learning model (E-AE) to robustly identify anomalies by learning complex spatial-temporal patterns to prevent False Data Injection attacks.</p>
-              </div>
-            </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} whileHover={{ y: -8 }}
+            className="bg-white/5 border border-white/10 rounded-2xl p-6 transition-all hover:border-emerald-400/30 hover:bg-white/10 backdrop-blur-sm flex flex-col"
+          >
+            <div className="flex items-center gap-4 mb-4"><BookIcon /><h3 className="text-2xl font-semibold">Publications</h3></div>
+            <div className="pl-10 border-l border-white/20 ml-3 flex-1">
+              <h4 className="text-lg font-medium text-white leading-snug">An Enhanced CNN BILSTM Autoencoder for Robust Anomaly Detection in PowerGrid's</h4>
+              <p className="text-emerald-400 text-sm mb-2 mt-1">MAI-2025 Conference • Dec 2025</p>
+              <p className="text-gray-400 text-sm leading-relaxed">Introduced a hybrid deep learning model (E-AE) to robustly identify anomalies by learning complex spatial-temporal patterns to prevent False Data Injection attacks.</p>
+            </div>
+          </motion.div>
 
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} whileHover={{ y: -10 }}
-              className="bg-white/5 border border-white/10 rounded-2xl p-6 transition-all hover:border-emerald-400/30 hover:bg-white/10 backdrop-blur-sm"
-            >
-              <div className="flex items-center gap-4 mb-4"><AwardIcon /><h3 className="text-2xl font-semibold">Certifications</h3></div>
-              <div className="pl-10 border-l border-white/20 ml-3 space-y-4">
-                <div><h4 className="text-md font-medium text-white">AWS Certified Cloud Practitioner</h4><p className="text-gray-400 text-sm">Amazon Web Services • Nov 2024</p></div>
-                <div><h4 className="text-md font-medium text-white">Ransomware Techniques</h4><p className="text-gray-400 text-sm">IT Masters • Oct 2025</p></div>
-              </div>
-            </motion.div>
-          </div>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} whileHover={{ y: -8 }}
+            className="bg-white/5 border border-white/10 rounded-2xl p-6 transition-all hover:border-emerald-400/30 hover:bg-white/10 backdrop-blur-sm flex flex-col"
+          >
+            <div className="flex items-center gap-4 mb-4"><AwardIcon /><h3 className="text-2xl font-semibold">Certifications</h3></div>
+            <div className="pl-10 border-l border-white/20 ml-3 space-y-4 flex-1">
+              <div><h4 className="text-md font-medium text-white">AWS Certified Cloud Practitioner</h4><p className="text-gray-400 text-sm">Amazon Web Services • Nov 2024</p></div>
+              <div><h4 className="text-md font-medium text-white">Ransomware Techniques</h4><p className="text-gray-400 text-sm">IT Masters • Oct 2025</p></div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

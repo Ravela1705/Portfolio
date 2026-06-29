@@ -8,15 +8,15 @@ const ExternalLinkIcon = () => (
 
 const projects = [
   {
-    title: "PGrid: Deep Learning Anomaly Detection",
-    description: "A hybrid deep learning model combining CNN and BiLSTM autoencoders to detect False Data Injection Attacks and complex spatio-temporal anomalies in smart power grids.",
-    liveLink: "https://github.com/Ravela1705/PGrid",
-    tags: ["Python", "Deep Learning", "TensorFlow", "Cybersecurity", "Autoencoders"]
+    title: "Lost and Found Mobile App",
+    description: "A community-focused mobile application designed for university students to post, track, and locate missing items across campus with real-time updates and status tracking.",
+    liveLink: "https://github.com/Ravela1705/Lost-and-Found", // Replace with your exact repository link if different
+    tags: ["React Native", "Mobile Development", "Node.js", "Database Management"]
   },
   {
     title: "Blockchain Voting Application",
     description: "A secure, decentralized student election portal built with a full-stack Next.js and Node.js pipeline, leveraging Supabase and cryptographic verification.",
-    liveLink: "https://github.com/Ravela1705/blockvote-frontend",
+    liveLink: "https://github.com/Ravela1705/portfolio",
     tags: ["Next.js", "Node.js", "Supabase", "Blockchain Architecture", "PostgreSQL"]
   },
   {
