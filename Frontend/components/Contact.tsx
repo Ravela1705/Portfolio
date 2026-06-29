@@ -27,7 +27,7 @@ export default function Contact() {
     };
 
     try {
-      const response = await fetch("https://portfolio-4l8s.onrender.com/contact", {
+      const response = await fetch("https://portfolio-ue77.onrender.com/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
